@@ -1,0 +1,8 @@
+.div {
+    font-size: 20px;
+    background-color: #3279a8;
+    font-family: "Courier New", Courier, monospace;
+}
+.div:hover {
+    font-weight: bold;
+}
