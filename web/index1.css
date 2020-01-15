@@ -21,6 +21,7 @@ h1 {
 
 .navigation li:last-child {
     border-right: none;
+    float: right;
 }
 
 .navigation li a {
