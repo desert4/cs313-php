@@ -59,6 +59,7 @@ h1 {
 }
 
 .grid-container {
+    width: 100%;
     display: grid;
     grid-template-areas: 
     'nav nav nav nav nav'
