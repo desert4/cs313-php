@@ -64,7 +64,7 @@ h1 {
     grid-template-areas: 
     'nav nav nav nav nav'
     'header header header header header'
-    'main main main right right'
+    'main main main rightside rightside'
     'footer footer footer footer footer';
     grid-gap: 10px;
     background-color: lightblue;
