@@ -46,7 +46,7 @@ h1 {
 .header {
     grid-area: header;
     font-size: 25px;
-    height: 75px;
+    /* height: 75px; */
     /* background-color: lightblue; */
 }
 
@@ -63,6 +63,7 @@ h1 {
 .footer {
     grid-area: footer;
     font-size: 10px;
+    text-align: center;
 }
 
 .grid-container {
@@ -80,6 +81,7 @@ h1 {
 }
 
 .grid-container > div {
+    text-align: center;
     padding: 20px 0;
 }
 
