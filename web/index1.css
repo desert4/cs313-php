@@ -44,7 +44,7 @@ h1 {
 .header {
     grid-area: header;
     font-size: 25px;
-    height: auto;
+    height: 75px;
     /* background-color: lightblue; */
 }
 
