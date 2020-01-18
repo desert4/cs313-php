@@ -44,6 +44,7 @@ h1 {
 .header {
     grid-area: header;
     font-size: 25px;
+    background-color: lightblue;
 }
 
 .main {
