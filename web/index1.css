@@ -44,7 +44,7 @@ h1 {
 .header {
     grid-area: header;
     font-size: 25px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .main {
@@ -70,9 +70,9 @@ h1 {
     'header header header header header'
     'main main main main rightside'
     'main main main main rightside'
-    'footer footer footer footer footer';
+    'footer footer footer fo0oter footer';
     grid-gap: 10px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 10px;
 }
 
@@ -80,6 +80,6 @@ h1 {
     padding: 20px 0;
 }
 
-body {
+/* body {
     background-color: lightgray;
-}
+} */
