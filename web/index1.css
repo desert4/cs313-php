@@ -55,6 +55,7 @@ h1 {
 
 .footer {
     grid-area: footer;
+    font-size: small;
 }
 
 .grid-container {
