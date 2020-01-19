@@ -14,7 +14,7 @@
   <!-- header("Location: https://rocky-reef-99024.herokuapp.com/index.html"); -->
   <nav>
         <ul class="navigation">
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="index.php">Home</a></li>
             <li><a href="#ABOUT">About</a></li>
             <li><a href="directory.html" id="directory">Directory</a></li>
         </ul>
