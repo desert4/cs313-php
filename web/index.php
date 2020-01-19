@@ -38,7 +38,7 @@
             <hr>
             <p>Copyright 2020</p>
             <div></div>
-            <?php include 'landing.php'; ?>
+            <?php include 'time.php'; ?>
         </div>
     </div>
 </body>
