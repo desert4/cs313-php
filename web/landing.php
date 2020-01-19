@@ -1,3 +1,3 @@
 <?php 
-echo "Well hello there!";
+echo "The current time is " . date("h:i:sa");
 ?>
