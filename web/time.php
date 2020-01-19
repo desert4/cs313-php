@@ -1,4 +1,4 @@
 <?php 
 date_default_timezone_set("America/Denver");
-echo "The current time is " . date("h:i:sa");
+echo "Time the page was loaded " . date("h:i:sa");
 ?>
