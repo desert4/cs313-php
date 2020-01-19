@@ -88,3 +88,8 @@ h1 {
 /* body {
     background-color: lightgray;
 } */
+
+.profile {
+    width: 15%;
+    height: auto;
+}
