@@ -12,16 +12,12 @@ echo "Name: $name <br>";
 echo "<a href='mailto:$email'>$email</a><br>"; //making this a link
 echo "Major: $major <br>";
 echo "Comments: $comments <br>";
-if ($continent)
-{
-echo "You have selected the continents: <br>"; 
-foreach($continent as $value) {
-    echo " " . $value . "<br>";
+if ($continent) {
+    echo "You have selected the continents: <br>"; 
+    foreach($continent as $value) {
+        echo " " . $value . "<br>";
+    }
 }
-}
-
 else 
-{
     echo "You haven't selected any continents.";
-}
 ?>
