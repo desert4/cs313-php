@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <form action='classActivity.php' method='post'> 
+        <form action='teamActivity.php' method='post'> 
             <div class="form-group">
-            <!-- email -->
-            <label for="exampleInputEmail1">Email address</label>
-            <input name='name' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <!-- name -->
+            <label for="exampleInputName1">Name</label>
+            <input name='name' type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter name">
+            <small id="nameHelp" class="form-text text-muted">Enter your name.</small>
             </div>
             <!-- email -->
               <label for="exampleInputEmail1">Email address</label>
@@ -36,6 +36,9 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
+            <!-- comments -->
+            <input type="text" name='comments' class="form-text text-muted" id="exampleCheck1">
+            <!-- submit button -->
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         <script src="" async defer></script>
