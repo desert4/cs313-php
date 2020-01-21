@@ -5,6 +5,10 @@ $password = htmlspecialchars($_POST['password']);
 $major    = htmlspecialchars($_POST['major']);
 $name     = htmlspecialchars($_POST['name']);
 $comments = htmlspecialchars($_POST['comments']);
-//do stuff with the data
-echo "Email: $email<br> Password: $password";
+
+//display the data data
+echo "Name: $name <br>";
+echo "<a href='$email'>$email</a><br>"; //making this a link
+
+echo "Comments: $comments <br>";
 ?>
