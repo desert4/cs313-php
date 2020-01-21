@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action='classActivity.php' method='post'> 
+            <div class="form-group">
+            <!-- email -->
+            <label for="exampleInputEmail1">Email address</label>
+            <input name='name' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- email -->
+              <label for="exampleInputEmail1">Email address</label>
+              <input name='email' type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- password -->
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input name='password' type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <!-- radio buttons -->
+            <label for="exampleInputMajor1">Major</label>
+            <input type="radio" name="major" value="cs">Computer Science
+            <input type="radio" name="major" value="wdd">Wed Design and Development
+            <input type="radio" name="major" value="cit">Computer Information Technology
+            <input type="radio" name="major" value="ce">Computer Engineering
+            <!-- checkbox -->
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        <script src="" async defer></script>
+    </body>
+</html>
+<!-- in PHP it needs the name attribute to get it from post. not id or anything -->
