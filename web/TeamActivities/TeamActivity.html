@@ -1,11 +1,10 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
     <body>
         <form action='teamActivity.php' method='post'> 
@@ -40,8 +39,15 @@
             <label for="exampleFormControlTextarea1">Comments</label>
             <textarea name="comments" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             <!-- continents -->
+            <br>
             <label>continents</label>
-            <input type="checkbox" name="c">
+            <input type="checkbox" name="continent[]" value="North America"> North America <br>
+            <input type="checkbox" name="continent[]" value="South America"> South America <br>
+            <input type="checkbox" name="continent[]" value="Europe"> Europe <br>
+            <input type="checkbox" name="continent[]" value="Asia"> Asia <br>
+            <input type="checkbox" name="continent[]" value="Australia"> Australia <br>
+            <input type="checkbox" name="continent[]" value="Africa"> Africa <br>
+            <input type="checkbox" name="continent[]" value="Antartica"> Antartica <br>
             <!-- submit button -->
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
