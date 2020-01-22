@@ -12,14 +12,7 @@
 
 <body>
   <!-- header("Location: https://rocky-reef-99024.herokuapp.com/index.html"); -->
-  <nav>
-        <ul class="navigation">
-            <li><a class="active" href="index.php">Home</a></li>
-            <li><a href="#ABOUT">About</a></li>
-            <li><a href="./web/project1/ski.php">Project 1</a></li>
-            <li><a href="directory.html" id="directory">Directory</a></li>
-        </ul>
-    </nav>
+    <?php include 'navigationBar.php' ?>
     <div class="grid-container">
         <div class="header">
             <h1>Welcome to my homepage</h1>
