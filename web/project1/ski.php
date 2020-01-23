@@ -7,11 +7,17 @@
     <title>Home Page</title>
     <link rel="icon" href="./web/images/Rebel_Logo_logo.jpg">
     <link href="navigation.css" rel="stylesheet" type="text/css">
+    <link href="homepage.css" rel="stylesheet" type="text/css">
+    <link href="resort.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <?php include 'skiNavBar.php' ?>
-    <h1>This will be the project 1 homepage</h1>
+    <h1>Ski Every Day</h1>
+    <div class="resort">
+        <h3>Kelly Canyon</h3>
+        <a href="./web/project1/Images/Kelly Canyon Map.jpg"><img src="./web/project1/Images/Kelly Canyon Map.jpg"></a>
+    </div>
 </body>
 
 </html>
