@@ -20,7 +20,7 @@ session_start();
    <h3> lets try this with a form </h3>
    <form action="" method="POST">
       <input type="text" name="picture">
-      <input type="submit" name="submit" value="submit!">
+      <input type="submit" name="Submit" value="submit!">
    </form>
    <?php // set session variables using a form 
    ?>
