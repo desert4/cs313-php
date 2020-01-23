@@ -2,6 +2,9 @@
 <html>
    <?php
       // set cookies
+      $cookie_name = "user";
+      $cookie_value = "Brighton Okerlund";
+      setcookie($cookie_name,$cookie_value, time() + (86400 * 30), "/");
    ?>
    <head>
       <title>Sessions and Cookies</title>
@@ -12,9 +15,15 @@
       <h3>Check if a single cookie exists and print it</h3>
       <?php
          // if cookie exists, echo it, otherwise echo that it doesn't have a value
+         if(!isset($_COOKIE[$cookie_name])) {
+            echo "Cookie named $cookie_name is $cookie_value";
+         } else {
+            echo "Cookie named $cookie_name is not set<br>";
+            echo "Value is" . $_COOKIE[$cookie_name];
+         }
       ?>
       <h3>To print all cookies:</h3>
-      <?php // print all cookies ?>
+      <?php print_r($_COOKIE); ?>
       <h3><a href="thursdayCookie.php">Now...to another page</a></h3>
       <h1><a href="thursdaySession1.php">Working with Sessions</a></h1>
    </body>
