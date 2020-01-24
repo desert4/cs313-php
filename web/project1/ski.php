@@ -16,7 +16,7 @@
     <h1>Ski Every Day</h1>
     <div class="resort">
         <h3>Kelly Canyon</h3>
-        <a href="Images\Kelly Canyon Map.jpg"><img src="./web/project1/Images/Kelly Canyon Map.jpg" alt="Kelly Canyon"></a>
+        <a href="./web/project1/Images/Kelly Canyon Map.jpg"><img src="./web/project1/Images/Kelly Canyon Map.jpg" alt="Kelly Canyon"></a>
     </div>
 </body>
 
