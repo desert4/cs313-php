@@ -16,7 +16,7 @@
     <h1>Ski Every Day</h1>
     <div class="resort">
         <h3>Kelly Canyon</h3>
-        <a href="http://rocky-reef-99024.herokuapp.com/web/project1/Images/Kelly Canyon Map.jpg"><img src="./web/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
+        <a href="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
     </div>
 </body>
 
