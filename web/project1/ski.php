@@ -15,8 +15,8 @@
     <?php include 'skiNavBar.php' ?>
     <h1>Ski Every Day</h1>
     <div class="resort">
+        <p>I am in a div</p>
         <form action="" method="POST" class="resort">
-
             <h3>Kelly Canyon</h3>
             <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
             <div style="padding: 15px; float: left">
