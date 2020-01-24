@@ -18,6 +18,7 @@
         <div class="resort">
             <h3>Kelly Canyon</h3>
             <a href="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
+            <br>
             <select>
                 <option value="Half Day">$33 (12:30-5:00 or 5:00-9:00)</option>
                 <option value="Full Day">$44 (9:30-5:00 or 12:30-9:00)</option>
