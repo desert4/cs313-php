@@ -27,6 +27,7 @@
                 <option value="Full Day">$44 (9:30-5:00 or 12:30-9:00)</option>
                 <option value="Entire Day">$50 (9:30-9:00)</option>
             </select>
+            <button>ADD TO CART</button>
         </form>
     </div>
 </body>
