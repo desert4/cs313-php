@@ -18,7 +18,6 @@
         <div class="resort">
             <h3>Kelly Canyon</h3>
             <a href="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
-            <br>
             <div style="padding: 15px; float: left">
                 <p>Location: Ririe, Idaho</p>
                 <p>Number of runs: </p>
