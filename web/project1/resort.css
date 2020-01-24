@@ -2,3 +2,9 @@
     width: 40%;
     float: left;
 }
+
+.resort {
+    background-color: lightgray;
+    border-radius: 7px;
+    width: 95%;
+}
