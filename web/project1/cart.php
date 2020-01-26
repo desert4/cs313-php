@@ -27,7 +27,7 @@ session_start();
     <?php 
     if (isset($_SESSION["KELLY"])) {
         echo "Your lift pass to Kelly Canyon is ";
-        if($_SESSION{"KELLY"} == "Kel1") {
+        if($_SESSION["KELLY"] == "Kel1") {
             echo "$33";
         }
         elseif ($_SESSION["KELLY"]) {
@@ -36,9 +36,13 @@ session_start();
         else {
             echo "$50";
         }
-        echo '<input type="submit" name="remove" value="remove item">';
+        echo '<input type="submit" name="remove1" value="remove item">';
     }
     ?>
         </form>
-    <?php ?>
+    <?php 
+    if (isset($_POST["remove1"])) {
+        unset($_SESSION["KELLY"]);
+    }
+    ?>
 </body>
