@@ -40,6 +40,7 @@ $zip = htmlspecialchars($_POST["zip"]);
         ?>
         <p>Your items will be shipped to:</p>
         <p><?php 
+        echo $fname;
         echo "$fname <br> $street <br> $city <br> $state <br> $zip";
         ?>
     </div>
