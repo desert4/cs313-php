@@ -18,7 +18,7 @@ session_start();
 
 <body>
     <?php include 'skiNavBar.php' ?>
-    <form action="confirmation.php" method="$_POST" class=".resort">
+    <form action="confirmation.php" method="POST" class=".resort">
         <h3>Please provide the following information</h3>
         <label>Name</label>
         <input type="text" name="fname" id="fname"><br>
