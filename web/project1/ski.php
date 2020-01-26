@@ -36,7 +36,7 @@ session_start();
         </div>
         <div class="resort">
             <h3>Grand Targhee</h3>
-            <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/GrandTargheeTrails.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
+            <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/GrandTargheeTrails.jpg"><img src="https://rocky-reef-99024.herokuapp.com/project1/Images/GrandTargheeTrails.jpg" alt="Grand Targhee"></a>
             <p>Location: Alta, Wyoming</p>
             <p>Number of runs: 27</p>
             <p>Normal Buisiness: medium</p>
@@ -49,7 +49,7 @@ session_start();
         </div>
         <div class="resort">
             <h3>Pebble Creek</h3>
-            <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/PebbleCreekTrails.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
+            <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/PebbleCreekTrails.jpg"><img src="https://rocky-reef-99024.herokuapp.com/project1/Images/PebbleCreekTrails.jpg" alt="Pebble Creek"></a>
             <p>Location: Inkom, Idaho</p>
             <p>Number of runs: 27</p>
             <p>Normal Buisiness: medium</p>
