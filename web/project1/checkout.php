@@ -20,7 +20,7 @@ session_start();
     <?php include 'skiNavBar.php' ?>
     <form action="confirmation.php" method="$_POST" class=".resort">
         <h3>Please provide the following information</h3>
-        <label>Street  Address</label>
+        <label>Street Address</label>
         <input type="text" name="street" id="street"><br>
         <label>City</label>
         <input type="text" name="city" id="city"><br>
@@ -31,5 +31,17 @@ session_start();
         <input type="reset" name="Reset" value="reset">
         <input type="submit" name="Submit" value="submit">
     </form>
+    <form action="" method="POST">
+        <input type="submit" name="return" value="Return To Cart">
+    </form>
 </body>
+
 </html>
+
+<?php 
+if (isset($_POST['return'])) {
+    header("Location: https://rocky-reef-99024.herokuapp.com/project1/cart.php");
+    exit;
+}
+
+?>
