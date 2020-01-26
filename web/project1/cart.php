@@ -18,12 +18,27 @@ session_start();
 
 <body>
     <?php include 'skiNavBar.php' ?>
+    <form action="" method="POST">
     <?php
-    if (!isset($_SESSION['KELLY']) || !isset($_SESSION['TARGHEE']) || !isset($_POST['PebbleButton'])) {
-        echo "There are no itemss on your cart";
-    } else { ?>
-        <form action="" method="POST">
-            <input type="submit" name="remove" value="remove item">
+    // if (!isset($_SESSION['KELLY']) || !isset($_SESSION['TARGHEE']) || !isset($_POST['PebbleButton'])) {
+    //     echo "There are no itemss on your cart";
+    // } 
+    ?>
+    <?php 
+    if (isset($_SESSION["KELLY"])) {
+        echo "Your lift pass to Kelly Canyon is ";
+        if($_SESSION{"KELLY"} == "Kel1") {
+            echo "$33";
+        }
+        elseif ($_SESSION["KELLY"]) {
+            echo "$44";
+        }
+        else {
+            echo "$50";
+        }
+        echo '<input type="submit" name="remove" value="remove item">';
+    }
+    ?>
         </form>
-    <?php } ?>
+    <?php ?>
 </body>
