@@ -18,4 +18,12 @@ session_start();
 
 <body>
     <?php include 'skiNavBar.php' ?>
+    <?php
+    if ($_SESSION["items"] == "false") {
+        echo "There are no itemss on your cart";
+    } else { ?>
+        <form action="" method="POST">
+            <input type="submit" name="remove" value="remove item">
+        </form>
+    <?php } ?>
 </body>
