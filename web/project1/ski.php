@@ -32,7 +32,7 @@ session_start();
                 <option value="Kel2">$44 (3/4 Day)</option>
                 <option value="Kel3">$50 (Full Day)</option>
             </select>
-            <button type="button" name="KellyButton" value="KellyTicket">ADD TO CART</button>
+            <input type="button" name="KellyButton" value="KellyTicket">ADD TO CART</button>
         </div>
         <div class="resort">
             <h3>Grand Targhee</h3>
