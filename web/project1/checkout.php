@@ -20,6 +20,8 @@ session_start();
     <?php include 'skiNavBar.php' ?>
     <form action="confirmation.php" method="$_POST" class=".resort">
         <h3>Please provide the following information</h3>
+        <label>Name</label>
+        <input type="text" name="fname" id="fname"><br>
         <label>Street Address</label>
         <input type="text" name="street" id="street"><br>
         <label>City</label>
