@@ -69,18 +69,14 @@ session_start();
     // CHECK THE BUTTONS
     if(isset($_POST['KellyButton'])) {
         $_SESSION['KELLY'] = $_POST['kelly'];
-        $_SESSION["items"] = "true";
-        // echo '<script> alert("Added item to cart")</script>';
     }
 
     if(isset($_POST['TargheeButton'])) {
         $_SESSION['TARGHEE'] = $_POST['targhee'];
-        $_SESSION["items"] = "true";
     }
 
     if(isset($_POST['PebbleButton'])) {
         $_SESSION['PEBBLE'] = $_POST['pebble'];
-        $_SESSION["items"] = "true";
     }
 ?>
 <?php 
