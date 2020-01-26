@@ -19,7 +19,7 @@ session_start();
 <body>
     <?php include 'skiNavBar.php' ?>
     <h1>Ski Every Day</h1>
-    <form action="" method="POST" onsubmit="return false">
+    <form action="" method="POST">
         <div class="resort">
             <h3>Kelly Canyon</h3>
             <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
@@ -45,7 +45,7 @@ session_start();
                 <option value="Targ1">$79 (weekday)</option>
                 <option value="Targ2">$84 (weekend)</option>
             </select>
-            <button>ADD TO CART</button>
+            <input type="submit" name="TargheeButton" value="Add To Cart">
         </div>
         <div class="resort">
             <h3>Pebble Creek</h3>
@@ -60,7 +60,7 @@ session_start();
                 <option value="Pebble3">$22 (Beginner Lift)</option>
                 <option value="Pebble4">$208 (5 Day)</option>
             </select>
-            <button>ADD TO CART</button>
+            <input type="submit" name="PebbleButton" value="Add To Cart">
         </div>
 </form>
 </body>
@@ -69,8 +69,16 @@ session_start();
     // CHECK THE BUTTONS
     if(isset($_POST['KellyButton'])) {
         $_SESSION['KELLY'] = $_POST['kelly'];
-        echo '<script> alert("Added item to cart")</script>';
-        print_r($_SESSION);
+        // echo '<script> alert("Added item to cart")</script>';
+    }
+
+    if(isset($_POST['TargheeButton'])) {
+        $_SESSION['TARGHEE'] = $_POST['targhee'];
+    }
+
+    if(isset($_POST['PebbleButton'])) {
+        $_SESSION['PEBBLE'] = $_POST['pebble'];
     }
 ?>
+<?php print_r($_SESSION);?>
 </html>
