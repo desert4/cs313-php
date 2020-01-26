@@ -21,13 +21,13 @@ session_start();
     <form action="confirmation.php" method="$_POST" class=".resort">
         <h3>Please provide the following information</h3>
         <label>Street  Address</label>
-        <input type="text" name="street"><br>
+        <input type="text" name="street" id="street"><br>
         <label>City</label>
-        <input type="text" name="street"><br>
+        <input type="text" name="city" id="city"><br>
         <label>State</label>
-        <input type="text" name="street"><br>
+        <input type="text" name="state" id="state"><br>
         <label>Zip Code</label>
-        <input type="text" name="street"><br>
+        <input type="text" name="zip" id="zip"><br>
         <input type="reset" name="Reset" value="reset">
         <input type="submit" name="Submit" value="submit">
     </form>
