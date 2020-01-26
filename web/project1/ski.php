@@ -69,8 +69,8 @@ session_start();
     // CHECK THE BUTTONS
     if(isset($_POST['KellyButton'])) {
         $_SESSION['KELLY'] = $_POST['kelly'];
+        echo '<script> alert("Added item to cart")</script>';
+        print_r($_SESSION);
     }
-    echo '<script> alert("Added item to cart")</script>';
-    print_r($_SESSION)
 ?>
 </html>
