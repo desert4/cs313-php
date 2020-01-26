@@ -38,6 +38,8 @@ session_start();
         }
         ?>
 
+        <br>
+
         <?php
         if (isset($_SESSION["TARGHEE"])) {
             echo "Your lift pass to Grand Targhee is ";
@@ -49,6 +51,8 @@ session_start();
             echo '<input type="submit" name="remove2" value="remove item">';
         }
         ?>
+
+        <br>
 
         <?php
         if (isset($_SESSION["PEBBLE"])) {
@@ -65,7 +69,9 @@ session_start();
             echo '<input type="submit" name="remove3" value="remove item">';
         }
         ?>
-        
+        <input type="submit" name="Checkout" value="checkout">
+        <input type="submit" name="Browse" value="Back To Browse">
+
     </form>
     <?php
     if (isset($_POST["remove1"])) {
@@ -78,6 +84,11 @@ session_start();
 
     if (isset($_POST["remove3"])) {
         unset($_SESSION["PEBBLE"]);
+    }
+
+    if (isset($_POST["Browse"])) {
+        header("Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");
+        exit;
     }
     ?>
 </body>
