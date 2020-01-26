@@ -35,7 +35,9 @@ session_start();
         ?>
         <p>Your items will be shipped to:</p>
         <p><?php 
-        echo htmlspecialchars($_POST["fname"]) . "<br>" . htmlspecialchars($_POST["street"]) . "<br>" . htmlspecialchars($_POST["city"]) . "<br>" . htmlspecialchars($_POST["state"]) . "<br>" . htmlspecialchars($_POST["zip"]);
+        echo "address:";
+        echo htmlspecialchars($_POST["fname"]);
+        echo "<br>" . htmlspecialchars($_POST["street"]) . "<br>" . htmlspecialchars($_POST["city"]) . "<br>" . htmlspecialchars($_POST["state"]) . "<br>" . htmlspecialchars($_POST["zip"]);
         ?>
     </div>
 </body>
