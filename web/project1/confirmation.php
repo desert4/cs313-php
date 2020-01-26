@@ -1,5 +1,10 @@
 <?php
 session_start();
+$fname = htmlspecialchars($_POST["fname"]);
+$street = htmlspecialchars($_POST["street"]);
+$city = htmlspecialchars($_POST["city"]);
+$state = htmlspecialchars($_POST["state"]);
+$zip = htmlspecialchars($_POST["zip"]);
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +40,7 @@ session_start();
         ?>
         <p>Your items will be shipped to:</p>
         <p><?php 
-        echo "address:";
-        echo htmlspecialchars($_POST["fname"]);
-        echo "<br>" . htmlspecialchars($_POST["street"]) . "<br>" . htmlspecialchars($_POST["city"]) . "<br>" . htmlspecialchars($_POST["state"]) . "<br>" . htmlspecialchars($_POST["zip"]);
+        echo "$fname <br> $street <br> $city <br> $state <br> $zip";
         ?>
     </div>
 </body>
