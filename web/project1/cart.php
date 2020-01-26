@@ -76,14 +76,20 @@ session_start();
     <?php
     if (isset($_POST["remove1"])) {
         unset($_SESSION["KELLY"]);
+        header("Location: https://rocky-reef-99024.herokuapp.com/project1/cart.php");
+        exit;
     }
 
     if (isset($_POST["remove2"])) {
         unset($_SESSION["TARGHEE"]);
+        header("Location: https://rocky-reef-99024.herokuapp.com/project1/cart.php");
+        exit;
     }
 
     if (isset($_POST["remove3"])) {
         unset($_SESSION["PEBBLE"]);
+        header("Location: https://rocky-reef-99024.herokuapp.com/project1/cart.php");
+        exit;
     }
 
     if (isset($_POST["Browse"])) {
