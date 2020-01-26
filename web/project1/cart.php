@@ -20,9 +20,6 @@ session_start();
     <?php include 'skiNavBar.php' ?>
     <form action="" method="POST">
         <?php
-        // if (!isset($_SESSION['KELLY']) || !isset($_SESSION['TARGHEE']) || !isset($_POST['PebbleButton'])) {
-        //     echo "There are no itemss on your cart";
-        // } 
         ?>
         <?php
         if (isset($_SESSION["KELLY"])) {

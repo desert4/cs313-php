@@ -79,7 +79,4 @@ session_start();
         $_SESSION['PEBBLE'] = $_POST['pebble'];
     }
 ?>
-<?php 
-    print_r($_SESSION);
-?>
 </html>
