@@ -35,11 +35,9 @@ session_start();
                 echo "$50";
             }
             echo '<input type="submit" name="remove1" value="remove item">';
+            echo '<br>';
         }
         ?>
-
-        <br>
-
         <?php
         if (isset($_SESSION["TARGHEE"])) {
             echo "Your lift pass to Grand Targhee is ";
@@ -49,11 +47,9 @@ session_start();
                 echo "$84";
             }
             echo '<input type="submit" name="remove2" value="remove item">';
+            echo '<br>';
         }
         ?>
-
-        <br>
-
         <?php
         if (isset($_SESSION["PEBBLE"])) {
             echo "Your lift pass to Pebble Creek is ";
@@ -67,11 +63,11 @@ session_start();
                 echo "$208";
             }
             echo '<input type="submit" name="remove3" value="remove item">';
+            echo '<br>';
         }
         ?>
         <input type="submit" name="Checkout" value="checkout">
         <input type="submit" name="Browse" value="Back To Browse">
-
     </form>
     <?php
     if (isset($_POST["remove1"])) {
@@ -96,5 +92,11 @@ session_start();
         header("Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");
         exit;
     }
+
+    if (isset($_POST["Checkout"])) {
+        header("Location: https://rocky-reef-99024.herokuapp.com/project1/checkout.php");
+        exit;
+    }
     ?>
 </body>
+</html>

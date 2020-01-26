@@ -1,0 +1,35 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="./web/images/Rebel_Logo_logo.jpg">
+    <link href="navigation.css" rel="stylesheet" type="text/css">
+    <link href="homepage.css" rel="stylesheet" type="text/css">
+    <link href="resort.css" rel="stylesheet" type="text/css">
+    <script src="ski.js"></script>
+</head>
+
+<body>
+    <?php include 'skiNavBar.php' ?>
+    <form action="confirmation.php" method="$_POST" class=".resort">
+        <h3>Please provide the following information</h3>
+        <label>Street  Address</label>
+        <input type="text" name="street"><br>
+        <label>City</label>
+        <input type="text" name="street"><br>
+        <label>State</label>
+        <input type="text" name="street"><br>
+        <label>Zip Code</label>
+        <input type="text" name="street"><br>
+        <input type="reset" name="Reset" value="reset">
+        <input type="submit" name="Submit" value="submit">
+    </form>
+</body>
+</html>
