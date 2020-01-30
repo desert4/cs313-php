@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.student2 {
+    display: none;
+}
+
+.container{
+    border-radius: 7px;
+    background-color: lightgray;
+    padding: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
