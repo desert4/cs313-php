@@ -1,9 +1,12 @@
 <h1 style="text-align: center">Scripture Resources</h1>
 <?php
+
+    $book = $_POST["book_name"];
+
     require "dbConnect.php";
     $db = get_db();
 
-    $scriptures = $db->prepare("SELECT * FROM Scriptures");
+    $scriptures = $db->prepare("SELECT * FROM Scriptures WHERE book='$book'");
     $scriptures->execute();
 
     while ($fRow = $scriptures->fetch(PDO::FETCH_ASSOC))
