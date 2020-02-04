@@ -11,6 +11,7 @@ CREATE TABLE public.resort
 , state         VARCHAR(100)    NOT NULL
 , cost          INT             
 , rating        REAL            NOT NULL
+, runs          INT
 );
 
 CREATE TABLE public.review
