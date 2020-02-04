@@ -1,7 +1,9 @@
 <h1 style="text-align: center">Scripture Resources</h1>
 <?php
+    session_start();
 
     $book = $_POST["book_name"];
+    $_SESSION["book"] = $book;
 
     require "dbConnect.php";
     $db = get_db();
@@ -16,6 +18,6 @@
         $verse = $fRow["verse"];
         $content = $fRow["content"];
 
-        echo "<p><b>$book $chapter:$verse - </b>\"$content\"</p>";
+        echo "<p><a href='https://rocky-reef-99024.herokuapp.com/practice/page1.php'><b>$book $chapter:$verse</b></a></p>";
     }
 ?>
