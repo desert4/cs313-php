@@ -13,6 +13,6 @@
         $verse = $fRow["verse"];
         $content = $fRow["content"];
 
-        echo "<p><b>$book $chapter:$verse - </b>'$content'</p>";
+        echo "<p><b>$book $chapter:$verse - </b>\"$content\"</p>";
     }
 ?>
