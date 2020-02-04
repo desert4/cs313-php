@@ -1,5 +1,8 @@
 <?php
 function get_db() {
+
+    $db = NULL;
+
     try
     {
       $dbUrl = getenv('DATABASE_URL');
@@ -21,4 +24,6 @@ function get_db() {
       echo 'Error!: ' . $ex->getMessage();
       die();
     }
+    
+    return $db;
 }
