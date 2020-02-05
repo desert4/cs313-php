@@ -67,16 +67,9 @@ session_start();
 
 <?php
     // CHECK THE BUTTONS
-    if(isset($_POST['KellyButton'])) {
-        $_SESSION['KELLY'] = $_POST['kelly'];
-    }
 
-    if(isset($_POST['TargheeButton'])) {
-        $_SESSION['TARGHEE'] = $_POST['targhee'];
-    }
-
-    if(isset($_POST['PebbleButton'])) {
-        $_SESSION['PEBBLE'] = $_POST['pebble'];
-    }
-?>
+    // if(isset($_POST['PebbleButton'])) {
+    //     $_SESSION['PEBBLE'] = $_POST['pebble'];
+    // }
+?>    
 </html>
