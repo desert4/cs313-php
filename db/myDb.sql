@@ -1,4 +1,4 @@
-CREATE TABLE public.user
+CREATE TABLE public.person
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , username      VARCHAR(100)    NOT NULL UNIQUE
 , password      VARCHAR(100)    NOT NULL
