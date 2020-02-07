@@ -35,7 +35,7 @@ $db = get_db();
         $runs = $fRow["runs"];
 
         echo "<div class='resort'><h3>$name</h3>";
-        echo "<p>Location: $city ,$state</p>";
+        echo "<p>Location: $city, $state</p>";
         echo "<p>Rating: $rating</p>";
         echo "<p>Runs: $runs</p></div>";
     }
