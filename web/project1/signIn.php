@@ -38,7 +38,7 @@ if (isset($_POST)) {
     $user = $db->prepare("SELECT COUNT(*) FROM person WHERE username='$name' AND password='$passphrase'");
     $user->execute();
 
-    if ($user != 1) {
+    if ($user == 1) {
         echo "Your information for $name is correct";
     } else {
         echo "could not find $name";
