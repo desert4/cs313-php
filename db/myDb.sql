@@ -2,6 +2,7 @@ CREATE TABLE public.person
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , username      VARCHAR(100)    NOT NULL UNIQUE
 , password      VARCHAR(100)    NOT NULL
+, email         VARCHAR(200)    NOT NULL
 );
 
 CREATE TABLE public.resort
@@ -17,7 +18,7 @@ CREATE TABLE public.resort
 CREATE TABLE public.review
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , place         INT             NOT NULL REFERENCES resort(id)
-, person        VARCHAR(100)    NOT NULL REFERENCES public.user(username)
+, person        VARCHAR(100)    NOT NULL REFERENCES person(username)
 , date          DATE            NOT NULL
 , rating        REAL            NOT NULL
 );

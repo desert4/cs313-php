@@ -1,20 +1,36 @@
 \echo '2a. How many events are there?'
 ---------------- Your code here ----------------
+SELECT COUNT(id) FROM w5_event;
 
--- \echo '2b. How many participants are there?'
+\echo '2b. How many participants are there?'
 ---------------- Your code here ----------------
+SELECT COUNT(id) FROM w5_PARTICIPANT;
 
--- \echo '3a. What is the third event when sorted alphabetically (by name)? '
+\echo '3a. What is the third event when sorted alphabetically (by name)? '
 ---------------- Your code here ----------------
+SELECT name FROM w5_event ORDER BY name ASC LIMIT 1 OFFSET 2;
 
--- \echo '3b. What is the third event when sorted by ID? '
+\echo '3b. What is the third event when sorted by ID? '
 ---------------- Your code here ----------------
+SELECT name FROM w5_EVENT ORDER BY id ASC LIMIT 1 OFFSET 2;
 
--- \echo '4a. List the names alphabetically of all the participants in the ''Toughman Utah'' competition'
+\echo '4a. List the names alphabetically of all the participants in the ''Toughman Utah'' competition'
 ---------------- Your code here ----------------
+SELECT name 
+FROM w5_EVENT_PARTICIPANT 
+INNER JOIN w5_PARTICIPANT 
+ON w5_EVENT_PARTICIPANT.participant_id = w5_PARTICIPANT.id  
+WHERE w5_EVENT_PARTICIPANT.event_id = 5
+ORDER BY name ASC;
 
 -- \echo '4b. List the names (sorted by id) of all the participants in the ''Kauai Marathon'' competition'
 ---------------- Your code here ----------------
+SELECT name
+FROM w5_EVENT_PARTICIPANT
+INNER JOIN w5_PARTICIPANT
+ON w5_EVENT_PARTICIPANT.participant_id = w5_PARTICIPANT.id  
+WHERE w5_EVENT_PARTICIPANT.event_id = 11
+ORDER BY w5_EVENT_PARTICIPANT.participant_id ASC;
 
 -- \echo '5a. How many competitions has ''Black Panther'' competed in?'
 ---------------- Your code here ----------------
