@@ -17,9 +17,9 @@
     <form action="ski.php" method="$_POST">
         <div class="resort">
             <label for="username"><b>Username:</b> </label>
-            <input type="text" id="username" placeholder="username" required><br>
+            <input type="text" id="username" placeholder="username" required><br><br>
             <label><b>Password:</b> </label>
-            <input type="text" id="password" placeholder="password" required><br>
+            <input type="text" id="password" placeholder="password" required><br><br>
             <button type="submit">Login</button>
         </div>
     </form>
