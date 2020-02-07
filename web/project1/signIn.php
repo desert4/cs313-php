@@ -19,7 +19,7 @@ $db = get_db();
 
 <body>
     <?php include 'skiNavBar.php' ?>
-    <form action='login()' method="$_POST">
+    <form action='' method="$_POST">
         <div class="resort">
             <label for="username"><b>Username:</b> </label>
             <input type="text" id="username" name="username" placeholder="username" required><br><br>
