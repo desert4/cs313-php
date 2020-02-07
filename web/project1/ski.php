@@ -12,7 +12,7 @@ $db = get_db();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="icon" href="./web/images/Rebel_Logo_logo.jpg">
+    <link rel="icon" href="./web/project1/Images/skier.png">
     <link href="navigation.css" rel="stylesheet" type="text/css">
     <link href="homepage.css" rel="stylesheet" type="text/css">
     <link href="resort.css" rel="stylesheet" type="text/css">
@@ -41,30 +41,14 @@ $db = get_db();
     }
     ?>
 
-    <div class="resort">
+    <!-- <div class="resort">
         <h3>Kelly Canyon</h3>
-        <!-- <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a> -->
+        <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
         <p>Location: Ririe, Idaho</p>
         <p>Number of runs: 27</p>
         <p>Normal Buisiness: light - medium</p>
         <p>Rating: 3.4</p>
-    </div>
-    <div class="resort">
-        <h3>Grand Targhee</h3>
-        <!-- <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/GrandTargheeTrails.jpg"><img src="https://rocky-reef-99024.herokuapp.com/project1/Images/GrandTargheeTrails.jpg" alt="Grand Targhee"></a> -->
-        <p>Location: Alta, Wyoming</p>
-        <p>Number of runs: 97</p>
-        <p>Normal Buisiness: medium</p>
-        <p>Rating: 4.2</p>
-    </div>
-    <div class="resort">
-        <h3>Pebble Creek</h3>
-        <!-- <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/PebbleCreekTrails.jpg"><img src="https://rocky-reef-99024.herokuapp.com/project1/Images/PebbleCreekTrails.jpg" alt="Pebble Creek"></a> -->
-        <p>Location: Inkom, Idaho</p>
-        <p>Number of runs: 54</p>
-        <p>Normal Buisiness: medium</p>
-        <p>Rating: 3.9</p>
-    </div>
+    </div> -->
 </body>
 
 <?php
