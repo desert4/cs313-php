@@ -25,20 +25,25 @@ $db = get_db();
             <input type="text" id="username" name="username" placeholder="username" required><br><br>
             <label><b>Password:</b> </label>
             <input type="text" id="password" name="password" placeholder="password" required><br><br>
-            <button type="submit">Login</button>
+            <button type="submit" name="submitButton" id="submit" value="Login">Login</button>
         </div>
     </form>
 </body>
 
 <?php
-if (isset($_POST["username"])) {
-    if (isset($_POST["password"])) {
+if (isset($_POST["submitButton"])) {
+    if (!isset($_POST["password"])) {
+        echo "no password";
+    } elseif (!isset($_POST["username"])) {
+        echo "no username";
+    } else {
         $name = $_POST["username"];
         $passphrase = $_POST["password"];
     
         $user = $db->prepare("SELECT COUNT(*) FROM person WHERE username='$name' AND password='$passphrase'");
         $user->execute();
     }
+
 
     if ($user == 1) {
         echo "Your information for $name is correct";
