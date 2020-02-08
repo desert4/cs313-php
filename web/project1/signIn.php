@@ -31,12 +31,14 @@ $db = get_db();
 </body>
 
 <?php
-if (isset($_POST)) {
-    $name = $_POST["username"];
-    $passphrase = $_POST["password"];
-
-    $user = $db->prepare("SELECT COUNT(*) FROM person WHERE username='$name' AND password='$passphrase'");
-    $user->execute();
+if (isset($_POST["username"])) {
+    if (isset($_POST["password"])) {
+        $name = $_POST["username"];
+        $passphrase = $_POST["password"];
+    
+        $user = $db->prepare("SELECT COUNT(*) FROM person WHERE username='$name' AND password='$passphrase'");
+        $user->execute();
+    }
 
     if ($user == 1) {
         echo "Your information for $name is correct";
