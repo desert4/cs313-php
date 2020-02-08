@@ -42,6 +42,9 @@ if (isset($_POST["username"])) {
 
     if ($user == 1) {
         echo "Your information for $name is correct";
+        $_SESSION["name"] = $name;
+        header("Location: ski.php");
+        
     } else {
         echo "could not find $name";
     }
