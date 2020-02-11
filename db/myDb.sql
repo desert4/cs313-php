@@ -18,7 +18,7 @@ CREATE TABLE public.resort
 CREATE TABLE public.review
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , place         INT             NOT NULL REFERENCES resort(id)
-, person        VARCHAR(100)    NOT NULL REFERENCES person(username)
+, reviewer        INT           NOT NULL REFERENCES person(id)
 , date          DATE            NOT NULL
 , rating        REAL            NOT NULL
 );
