@@ -1,17 +1,13 @@
 -- ----------------------------------------------- --
 -- ---------   POPULATE THE USER TABLE   --------- --
 -- ----------------------------------------------- --
-INSERT INTO public.resort ( name
-                        , city
-                        , state
-                        , cost
+INSERT INTO review      ( place
+                        , person
+                        , date
                         , rating
-                        , runs
                         )
-                VALUES  ( 'Pebble Creek'
-                        , 'Inkom'
-                        , 'Idaho'
-                        , 40
-                        , 3.4
-                        , 27
+                VALUES  ( 1
+                        , 2
+                        , '2020=07-02'
+                        , 4.3
                         );
