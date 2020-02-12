@@ -21,7 +21,7 @@ $db = get_db();
 <body>
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
-        <form action='' method="$_POST">
+        <form action='signingIn.php' method="POST">
             <label for="username"><b>Username:</b> </label>
             <input type="text" id="username" name="username" placeholder="username" required><br><br>
             <label><b>Password:</b> </label>
@@ -34,27 +34,6 @@ $db = get_db();
 </body>
 
 <?php
-if (isset($_POST["submitButton"])) {
-    if (!isset($_POST["password"])) {
-        echo "no password";
-    } elseif (!isset($_POST["username"])) {
-        echo "no username";
-    } else {
-        $name = $_POST["username"];
-        $passphrase = $_POST["password"];
-
-        $user = $db->prepare("SELECT COUNT(*) FROM person WHERE username='$name' AND password='$passphrase'");
-        $user->execute();
-    }
-
-    if ($user == 1) {
-        echo "Your information for $name is correct";
-        $_SESSION["name"] = $name;
-        header("Location: ski.php");
-    } else {
-        echo "could not find $name";
-    }
-}
 ?>
 
 </html>

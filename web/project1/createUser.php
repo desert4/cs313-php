@@ -32,6 +32,6 @@ else {
     $_SESSION['name'] = $username;
 }
 
-header('Refresh: 10; URL=https://rocky-reef-99024.herokuapp.com/project1/ski.php');
+header('Refresh: 2; URL=https://rocky-reef-99024.herokuapp.com/project1/ski.php');
 die();
 ?>
