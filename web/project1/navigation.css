@@ -16,6 +16,11 @@
     border-right: none;
     float: right;
 }
+.navigation li:nth-last-child(2)
+{
+    float: right;
+    border: 1px white;
+}
 
 .navigation li a {
     display: block;
