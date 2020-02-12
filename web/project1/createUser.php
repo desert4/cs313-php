@@ -2,6 +2,7 @@
 $username = $_POST["username"];
 $password = $_POST["password"];
 $email = $_POST["email"];
+session_start();
 
 require("dbConnect.php");
 $db = get_db();
@@ -28,6 +29,7 @@ else {
         echo "Error with DB. Details: $ex";
         die();
     }
+    $_SESSION['name'] = $username;
 }
 
 header('Refresh: 10; URL=https://rocky-reef-99024.herokuapp.com/project1/ski.php');
