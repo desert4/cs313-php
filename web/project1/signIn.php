@@ -44,7 +44,6 @@ if (isset($_POST["submitButton"])) {
         $user->execute();
     }
 
-
     if ($user == 1) {
         echo "Your information for $name is correct";
         $_SESSION["name"] = $name;
