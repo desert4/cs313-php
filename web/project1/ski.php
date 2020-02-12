@@ -23,7 +23,7 @@ $db = get_db();
     <h1>Ski Every Day</h1>
 
     <?php
-    if (!$_POST['search']) {
+    if (!$_GET['search']) {
         $query = "SELECT * FROM resort";
     } else {
         $searchValue = $_POST['search'];

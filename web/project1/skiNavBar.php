@@ -5,7 +5,7 @@ session_start();
 <nav>
     <ul class="navigation">
         <li><a class="active" href="ski.php">Home</a></li>
-        <li><form action="ski.php" method="POST"><input type="text" placeholder="Search..." name="search" id="search"></form></li>
+        <li><form action="ski.php" method="GET"><input type="text" placeholder="Search..." name="search" id="search"></form></li>
         <li><?php echo $_SESSION['name']; ?></li>
         <!-- <li><a href="">Reviews</a></li> -->
         <!-- <li><a href="">Resorts</a></li> -->
