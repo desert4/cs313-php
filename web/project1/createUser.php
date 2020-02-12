@@ -8,6 +8,7 @@ $db = get_db();
 
 $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
 $check = $db->prepare($queryCheck);
+$check->execute();
 
 if($check == '1') {
     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/newUser.php/?type=invalid");
@@ -15,8 +16,11 @@ if($check == '1') {
 else {
     try
     {
-        $query = "INSERT INTO person(username, password, email) VALUES ($username, $password, $email)";
+        $query = "INSERT INTO person(username, password, email) VALUES (:username, :password, :email)";
         $statement = $db->prepare($query);
+        $statement->bindValue(':username', $username);
+        $statement->bindValue(':password', $password);
+        $statement->bindValue(':email', $email);
         $statement->execute();
     }
     catch (Exception $ex)
