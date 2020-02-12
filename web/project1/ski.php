@@ -27,7 +27,8 @@ $db = get_db();
     if (!$_POST['search']) {
         $query = "SELECT * FROM resort";
     } else {
-        $query = "SELECT * FROM resort WHERE name='$_POST["search"]'";
+        $searchValue = $_POST['search'];
+        $query = "SELECT * FROM resort WHERE name='$searchValue'";
     }
     $resorts = $db->prepare("$query");
     $resorts->execute();
