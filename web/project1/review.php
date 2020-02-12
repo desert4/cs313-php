@@ -2,9 +2,9 @@
 require("dbConnect.php");
 $db = get_db();
 
-if (!$_SESSION['name']) {
-    header("Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php");
-}
+// if (!$_SESSION['name']) {
+//     header("Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php");
+// }
 ?>
 
 <!DOCTYPE html>

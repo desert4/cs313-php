@@ -5,11 +5,12 @@
     overflow: hidden;
     background-color: black;
     grid-area: nav;
+    color: white;
 }
 
 .navigation li {
     float: left;
-    border-right: 1px white;
+    border-right: 1px rgb(39, 33, 33);
 }
 
 .navigation li:last-child {
