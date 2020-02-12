@@ -6,10 +6,10 @@ $email = $_POST["email"];
 require("dbConnect.php");
 $db = get_db();
 
-$queryCheck = "SELECT COUNT(*) FROM person WHERE name='$username'";
+$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
 $check = $db->prepare($queryCheck);
 
-if($check == 1) {
+if($check == '1') {
     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/newUser.php/?type=invalid");
 }
 else {
