@@ -24,7 +24,7 @@ $db = get_db();
             <label for="username"><b>Username:</b> </label>
             <input type="text" id="username" name="username" placeholder="username" required><br><br>
             <label><b>Password:</b> </label>
-            <input type="text" id="password" name="password" placeholder="password" required><br><br>
+            <input type="password" id="password" name="password" placeholder="password" required><br><br>
             <button type="submit" name="submitButton" id="submit" value="Login">Login</button>
         </form>
         <a href="newUser.php"><button type="button">New Member</button></a>

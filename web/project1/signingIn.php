@@ -4,7 +4,6 @@ $db = get_db();
 
 $username = $_POST["username"];
 $password = $_POST["password"];
-$email = $_POST["email"];
 session_start();
 
 $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
@@ -20,5 +19,4 @@ else {
 }
 
 die();
-
 ?>
