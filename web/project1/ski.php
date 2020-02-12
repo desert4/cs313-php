@@ -24,6 +24,11 @@ $db = get_db();
     <h1>Ski Every Day</h1>
 
     <?php
+    if (!$_POST['search']) {
+        $query = "SELECT * FROM resort";
+    } else {
+        $query = "SELECT * FROM resort WHERE name='$_POST["search"]'";
+    }
     $resorts = $db->prepare("SELECT * FROM resort");
     $resorts->execute();
     
