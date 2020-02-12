@@ -16,7 +16,6 @@ $db = get_db();
     <link href="navigation.css" rel="stylesheet" type="text/css">
     <link href="homepage.css" rel="stylesheet" type="text/css">
     <link href="resort.css" rel="stylesheet" type="text/css">
-    <script src="ski.js"></script>
 </head>
 
 <body>
