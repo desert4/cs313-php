@@ -21,12 +21,12 @@ $db = get_db();
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
         <form action="ski.php" method="POST">
-            <label>Please enter the username you want: </label>
+            <label>Please enter the username you want: </label><br>
             <input type="text" placeholder="username"><br><br>
-            <label>Please enter your password: </label>
+            <label>Please enter your password: </label><br>
             <input type="password" placeholder="password"><br><br>
-            <label>Please enter your email: </label>
-            <input type="text" placeholder="password"><br><br>
+            <label>Please enter your email: </label><br>
+            <input type="text" placeholder="example@email.com"><br><br>
             <input type="submit" value="Create">
         </form>
     </div>
