@@ -6,7 +6,7 @@ $email = $_POST["email"];
 require("dbConnect.php");
 $db = get_db();
 
-$queryCheck = "SELECT COUNT(*) FROM person WHERE name='$username";
+$queryCheck = "SELECT COUNT(*) FROM person WHERE name='$username'";
 $check = $db->prepare($queryCheck);
 
 if($check == 1) {
