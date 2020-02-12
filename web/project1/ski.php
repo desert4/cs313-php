@@ -29,7 +29,7 @@ $db = get_db();
     } else {
         $query = "SELECT * FROM resort WHERE name='$_POST["search"]'";
     }
-    $resorts = $db->prepare("SELECT * FROM resort");
+    $resorts = $db->prepare("$query");
     $resorts->execute();
     
     while ($fRow = $resorts->fetch(PDO::FETCH_ASSOC)) {
