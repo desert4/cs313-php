@@ -16,8 +16,9 @@
     border-right: none;
     float: right;
 }
-.navigation li:nth-last-child(2)
+.navigation li:nth-child(3)
 {
+    color: white;
     float: right;
     border: 1px white;
 }
