@@ -25,6 +25,6 @@ catch (Exception $ex)
 	echo "Error with DB. Details: $ex";
 	die();
 }
-header("Location: notes.php/?courseId=$course");
+header("Location: notes.php/?courseId=$student_class");
 
 die();
