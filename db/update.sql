@@ -1,0 +1,1 @@
+INSERT INTO review(place, reviewer, rating) VALUES(1, 1, 4.3);
