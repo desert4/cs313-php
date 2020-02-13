@@ -28,7 +28,7 @@ CREATE TABLE review
 );
 
 -- insert default values --
-INSERT INTO resort(name, city, state, cost, rating, runs) VALUES('Kelly Cayon', 'Ririe', 'Idaho', 49, 3.8, 27);
+INSERT INTO resort(name, city, state, cost, rating, runs) VALUES('Kelly Canyon', 'Ririe', 'Idaho', 49, 3.8, 27);
 INSERT INTO person(username, password, email) VALUES('desert4','blah', 'email@email.com');
 INSERT INTO review(place, reviewer, rating) VALUES(1, 1, 4.3);
 
