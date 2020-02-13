@@ -61,8 +61,9 @@ $db = get_db();
 
             echo "<h4>$reviewer</h4>";
             echo "<p>Date of review: $date<p>";
-            echo "<p>Rating: $reviewRating</p></div>";
+            echo "<p>Rating: $reviewRating</p>";
         }
+        echo "</div>";
     }
     ?>
 
