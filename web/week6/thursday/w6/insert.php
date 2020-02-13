@@ -17,8 +17,14 @@ $date = date("y-m-d");
 try
 {
 	// insert into note table
-	$query = "INSERT INTO w6_note(course_id, student_id, title, content, date, time)VALUES($student_class, $student_name, $note_title, $course_note, $date, $time)";
+	$query = "INSERT INTO w6_note(course_id, student_id, title, content, date, time) VALUES(:course, :student, :title, :content, :date, :time)";
 	$statement = $db->prepare($query);
+	$statement->bindValue(':course', $student_class);
+	$statement->bindValue(':student', $student_name);
+	$statement->bindValue(':title', $note_title);
+	$statement->bindValue(':content', $course_note);
+	$statement->bindValue(':date', $date);
+	$statement->bindValue(':time', $time);
 	$statement->execute();
 }
 catch (Exception $ex)
