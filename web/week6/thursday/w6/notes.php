@@ -31,7 +31,7 @@
 				
 				// get and display notes for course
 				// this should include all note information, including the name of the individual that wrote the note
-				$statement = $db->prepare("SELECT * FROM w6_note");
+				$statement = $db->prepare("SELECT * FROM w6_note where course_id=$course_id");
 				$statement->execute();
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 					$id = $row['id'];
