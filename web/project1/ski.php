@@ -85,7 +85,7 @@ $reviewTotal = 0;
         // do the math to get the overall total
         $user_rating = ($reviewTotal/$numberReviews);
         //display the rating
-        echo "<hr><p>Rating: $user_rating</p>";
+        echo "<hr><p>Members rating: $user_rating</p>";
         echo "</div>";
     }
     ?>
