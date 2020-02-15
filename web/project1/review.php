@@ -63,6 +63,7 @@ $db = get_db();
                 }
                 ?>
             </select><br><br>
+            <button type="submit" id="submit" name="submit" value="submit">Submit</button>
         </form>
     </div>
 </body>
