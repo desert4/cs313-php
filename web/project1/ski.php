@@ -48,6 +48,7 @@ $reviewTotal = 0;
         echo "<div class='resort'><h3>$name</h3>";
         echo "<p>Location: $city, $state</p>";
         echo "<p>Runs: $runs</p><hr>";
+        echo "<p>default Rating: $rating";
 
         // display the reviews
         $reviewQuery = "SELECT * FROM review WHERE place='$resortId'";
