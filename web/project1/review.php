@@ -24,8 +24,8 @@ $db = get_db();
 <body>
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
-        <form action="" method="POST">
-            <label for="resort">Select the resort</label>
+        <form action="insertReview.php" method="POST">
+            <label for="resort">Select the resort: </label><br>
             <select id="resort" name="resort">
                 <?php
                 $statement = $db->prepare("SELECT id, name FROM resort");
@@ -37,7 +37,7 @@ $db = get_db();
                 }
                 ?>
             </select><br><br>
-            <label for="rating">Rating:</label>
+            <label for="rating">Rating:</label><br>
             <select id="rating" name="rating">
                 <option value="0">0</option>
                 <option value="0.5">0.5</option>
@@ -51,7 +51,8 @@ $db = get_db();
                 <option value="4.5">4.5</option>
                 <option value="5">5</option>
             </select><br><br>
-            <select id="user" name="user">
+            <label for="user">Please choose who you are as i can not not get this to work at this time:</label><br>
+            <select id="user" name="user" default>
                 <?php
                 $statement = $db->prepare("SELECT id, username FROM person");
                 $statement->execute();
