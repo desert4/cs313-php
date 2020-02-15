@@ -43,8 +43,8 @@ $db = get_db();
         $runs = $fRow["runs"];
 
         echo "<div class='resort>";
-        
-        $user_name = $db->prepare("SELECT username FROM person WHERE id=$userId");
+
+        $user_name = $db->prepare("SELECT username FROM person WHERE id='$userId'");
         $user_name->execute();
 
         while ($tRow = $user_name->fetch(PDO::FETCH_ASSOC)) {
