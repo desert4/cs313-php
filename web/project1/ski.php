@@ -3,6 +3,9 @@ session_start();
 
 require "dbConnect.php";
 $db = get_db();
+
+$numberReviews = 0;
+$reviewTotal = 0;
 ?>
 
 <!DOCTYPE html>
@@ -39,12 +42,11 @@ $db = get_db();
         $name = $fRow["name"];
         $city = $fRow["city"];
         $state = $fRow["state"];
-        $rating = $fRow["rating"];
+        // $rating = $fRow["rating"];
         $runs = $fRow["runs"];
 
         echo "<div class='resort'><h3>$name</h3>";
         echo "<p>Location: $city, $state</p>";
-        echo "<p>Rating: $rating</p>";
         echo "<p>Runs: $runs</p><hr>";
 
         // display the reviews
@@ -58,6 +60,10 @@ $db = get_db();
             $reviewer = $sRow["reviewer"];
             $date = $sRow["date"];
             $reviewRating = $sRow["rating"];
+
+            // do the math to add to reviews
+            $numberReviews += 1;
+            $reviewTotal += $reviewRating;
 
             $userQuery = "SELECT * FROM person WHERE id=$reviewer";
             $getName = $db->prepare("$userQuery");
@@ -74,18 +80,15 @@ $db = get_db();
             echo "<p>Date of review: $date<p>";
             echo "<p>Rating: $reviewRating</p>";
         }
+
+        // do the math to get the overall total
+        $rating = ($reviewTotal/$numberReviews);
+        //display the rating
+        echo "<hr><p>Rating: $rating</p>";
         echo "</div>";
     }
     ?>
 
-    <!-- <div class="resort">
-        <h3>Kelly Canyon</h3>
-        <a href="https://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg"><img src="http://rocky-reef-99024.herokuapp.com/project1/Images/KellyCanyonMap.jpg" alt="Kelly Canyon"></a>
-        <p>Location: Ririe, Idaho</p>
-        <p>Number of runs: 27</p>
-        <p>Normal Buisiness: light - medium</p>
-        <p>Rating: 3.4</p>
-    </div> -->
 </body>
 
 <?php
