@@ -44,10 +44,10 @@ $db = get_db();
 
         echo "<div class='resort>";
 
-        $user_name = $db->prepare("SELECT username FROM person WHERE id='$userId'");
-        $user_name->execute();
+        $userQuery = $db->prepare("SELECT * FROM person WHERE id='$userId'");
+        $userQuery->execute();
 
-        while ($tRow = $user_name->fetch(PDO::FETCH_ASSOC)) {
+        while ($tRow = $userQuery->fetch(PDO::FETCH_ASSOC)) {
             $name = $tRow["username"];
 
             echo "<h3>$name</h3>";
