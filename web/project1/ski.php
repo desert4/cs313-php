@@ -36,13 +36,23 @@ $db = get_db();
     // display the resorts
     while ($fRow = $resorts->fetch(PDO::FETCH_ASSOC)) {
         $resortId = $fRow["id"];
-        $name = $fRow["name"];
+        $userId = $fRow["name"];
         $city = $fRow["city"];
         $state = $fRow["state"];
         $rating = $fRow["rating"];
         $runs = $fRow["runs"];
 
-        echo "<div class='resort'><h3>$name</h3>";
+        echo "<div class='resort>";
+        
+        $user_name = $db->prepare("SELECT username FROM person WHERE id=$userId");
+        $user_name->execute();
+
+        while ($tRow = $user_name->fetch(PDO::FETCH_ASSOC)) {
+            $name = $tRow["username"];
+
+            echo "<h3>$name</h3>";
+        }
+
         echo "<p>Location: $city, $state</p>";
         echo "<p>Rating: $rating</p>";
         echo "<p>Runs: $runs</p><hr>";

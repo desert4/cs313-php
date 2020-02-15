@@ -36,7 +36,7 @@ $db = get_db();
                     echo "<option value='$id'>$name</option>";
                 }
                 ?>
-            </select>
+            </select><br>
             <label for="rating">Rating:</label>
                   <select id="rating" name="rating">
                      <option value="0">0</option>
