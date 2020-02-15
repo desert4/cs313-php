@@ -42,7 +42,7 @@ $reviewTotal = 0;
         $name = $fRow["name"];
         $city = $fRow["city"];
         $state = $fRow["state"];
-        // $rating = $fRow["rating"];
+        $rating = $fRow["rating"];
         $runs = $fRow["runs"];
 
         echo "<div class='resort'><h3>$name</h3>";
@@ -82,9 +82,9 @@ $reviewTotal = 0;
         }
 
         // do the math to get the overall total
-        $rating = ($reviewTotal/$numberReviews);
+        $user_rating = ($reviewTotal/$numberReviews);
         //display the rating
-        echo "<hr><p>Rating: $rating</p>";
+        echo "<hr><p>Rating: $user_rating</p>";
         echo "</div>";
     }
     ?>
