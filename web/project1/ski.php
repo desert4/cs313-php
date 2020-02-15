@@ -59,7 +59,18 @@ $db = get_db();
             $date = $sRow["date"];
             $reviewRating = $sRow["rating"];
 
-            echo "<h4>$reviewer</h4>";
+            $userQuery = "SELECT * FROM person WHERE id=$reviewer";
+            $getName = $db->prepare("$userQuery");
+            $getName->execute();
+            
+            // display the resorts
+            while ($tRow = $getName->fetch(PDO::FETCH_ASSOC)) {
+                $user_name = $tRow["username"];
+
+                echo "<h4>$user_name</h4>";
+            }
+
+            // echo "<h4>$reviewer</h4>";
             echo "<p>Date of review: $date<p>";
             echo "<p>Rating: $reviewRating</p>";
         }
