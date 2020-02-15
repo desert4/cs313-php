@@ -33,12 +33,12 @@ INSERT INTO person(username, password, email) VALUES('desert4','blah', 'email@em
 INSERT INTO review(place, reviewer, rating) VALUES(1, 1, 4.3);
 
 -- populate resorts --
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Pebble Creek', 'Inkom', 'Idaho', 3.8, 27);
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Grand Targhee', 'Alta', 'Wyoming', 4.2, 27);
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Snow King Moutain', 'Jackson', 'Wyoming', 4.3, 27);
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Park City', 'Park City', 'Utah', 4.8, 27);
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Big Sky', 'Big Sky', 'Montana', 4.8, 27);
-INSERT INTO resort(name, city, state, rating, runs) VALUES('Cherry Peak', 'Richmond', 'Utah', 3.8, 27);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Pebble Creek', 'Inkom', 'Idaho', 3.8, 54);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Grand Targhee', 'Alta', 'Wyoming', 4.2, 97);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Snow King Moutain', 'Jackson', 'Wyoming', 4.3, 33);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Park City', 'Park City', 'Utah', 4.8, 341);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Big Sky', 'Big Sky', 'Montana', 4.8, 249);
+INSERT INTO resort(name, city, state, rating, runs) VALUES('Cherry Peak', 'Richmond', 'Utah', 3.8, 31);
 
 -- populate users --
 INSERT INTO person(username, password, email) VALUES('guest', 'cs313', 'email@email.com');
