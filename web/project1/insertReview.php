@@ -6,7 +6,7 @@ $resort = $_POST["resort"];
 $rating = $_POST["rating"];
 $user = $_SESSION["name"];
 
-echo "$user";
+echo "$user<br>";
 // connect to the database
 require("dbConnect.php");
 $db = get_db();
@@ -19,6 +19,8 @@ $personStatement->execute();
 while ($fRow = $personStatement->fetch(PDO::FETCH_ASSOC)) {
     $id = $row['id'];
 }
+
+echo "$id<br>";
 
 // create the query and execute
 try {
