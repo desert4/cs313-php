@@ -48,7 +48,7 @@ $reviewTotal = 0;
 
         echo "<div class='resort'><h3>$name</h3>";
         echo "<p>Location: $city, $state</p>";
-        if($city != null) {
+        if($cost != null) {
             echo "<p>Cost: $cost";
         }
         echo "<p>Default Rating: $rating";
