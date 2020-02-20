@@ -9,8 +9,6 @@ $db = get_db();
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-// unhash the users password
-
 // check the database for the user
 $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username' AND password='";
 $check = $db->prepare($queryCheck);
@@ -23,19 +21,19 @@ if($check == 1) {
     $getPass = $db->prepare("$passwordQuery");
     $getPass->execute();
 
-    while ($sRow = $getPass->fetch(PDO::FETCH_ASSOC)) {
-        $personId = $sRow["id"];
-        $hashedPassword = $sRow["password"];
-    }
+    // while ($sRow = $getPass->fetch(PDO::FETCH_ASSOC)) {
+    //     $personId = $sRow["id"];
+    //     $hashedPassword = $sRow["password"];
+    // }
 
-    // check the password
-    if(password_verify($password, $hashedPassword)) {
+    // // check the password
+    // if(password_verify($password, $hashedPassword)) {
         $_SESSION['name'] = $username;
         header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
-    } else {
-        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
+    // } else {
+    //     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
 
-    }
+    // }
 }
 // if not in the database redirect back to sign in page with error
 else {
