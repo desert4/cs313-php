@@ -28,6 +28,7 @@ if($check == 1) {
         $hashedPassword = $sRow["password"];
     }
 
+    // check the password
     if(password_verify($password, $hashedPassword)) {
         $_SESSION['name'] = $username;
         header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
