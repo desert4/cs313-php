@@ -4,7 +4,7 @@ session_start();
 // get the variables from the previous page
 $resort = $_POST["resort"];
 $rating = $_POST["rating"];
-$user = $_POST["user"];
+$user = $_SESSION["name"];
 
 // connect to the database
 require("dbConnect.php");
