@@ -42,11 +42,15 @@ $reviewTotal = 0;
         $name = $fRow["name"];
         $city = $fRow["city"];
         $state = $fRow["state"];
+        $cost = $fRow["cost"];
         $rating = $fRow["rating"];
         $runs = $fRow["runs"];
 
         echo "<div class='resort'><h3>$name</h3>";
         echo "<p>Location: $city, $state</p>";
+        if($city != null) {
+            echo "<p>Cost: $cost";
+        }
         echo "<p>Default Rating: $rating";
         echo "<p>Runs: $runs</p><hr>";
 
