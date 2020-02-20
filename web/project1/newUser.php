@@ -1,7 +1,9 @@
 <?php
+session_start();
+
+// connect to the database
 require "dbConnect.php";
 $db = get_db();
-session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +22,7 @@ session_start();
 <body>
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
+        <!-- form to create user -->
         <form action="createUser.php" method="POST">
             <label>Please enter the username you want: </label><br>
             <input type="text" name="username" placeholder="username" required><br><br>

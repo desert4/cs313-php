@@ -1,4 +1,5 @@
 <?php
+// this page was for week 3 only and is not included in any links in the final project
 session_start();
 $fname = htmlspecialchars($_POST["fname"]);
 $street = htmlspecialchars($_POST["street"]);

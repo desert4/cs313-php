@@ -1,4 +1,5 @@
 <?php
+// this is the  function to connect to the database
 function get_db() {
 
     $db = NULL;

@@ -1,11 +1,16 @@
 <?php
 session_start();
+
+// get the variables from the previous page
 $resort = $_POST["resort"];
 $rating = $_POST["rating"];
 $user = $_POST["user"];
 
+// connect to the database
 require("dbConnect.php");
 $db = get_db();
+
+// create the query and execute
 try {
     $query = "INSERT INTO review(place, reviewer, rating) VALUES(:resort, :user, :rating)";
     $statement = $db->prepare($query);

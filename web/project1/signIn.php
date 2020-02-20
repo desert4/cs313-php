@@ -3,6 +3,7 @@
 <?php
 session_start();
 
+//connect to the database
 require "dbConnect.php";
 $db = get_db();
 ?>
@@ -18,8 +19,10 @@ $db = get_db();
 </head>
 
 <body>
+    <!-- display the nav bar -->
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
+        <!-- form for sign in information -->
         <form action='signingIn.php' method="POST">
             <label for="username"><b>Username:</b> </label>
             <input type="text" id="username" name="username" placeholder="username" required><br><br>
@@ -27,6 +30,8 @@ $db = get_db();
             <input type="password" id="password" name="password" placeholder="password" required><br><br>
             <button type="submit" name="submitButton" id="submit" value="Login">Login</button>
         </form>
+
+        <!-- give the option to create a new user -->
         <a href="newUser.php"><button type="button">New Member</button></a>
     </div>
 

@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+// connect to the database
 require("dbConnect.php");
 $db = get_db();
 
@@ -22,10 +24,13 @@ $db = get_db();
 </head>
 
 <body>
+    <!-- include the nav bar -->
     <?php include 'skiNavBar.php' ?>
     <div class="resort">
+        <!-- form for creating a new review -->
         <form action="insertReview.php" method="POST">
             <label for="resort">Select the resort: </label><br>
+            <!-- get all of the resorts in the database and use them as options -->
             <select id="resort" name="resort">
                 <?php
                 $statement = $db->prepare("SELECT id, name FROM resort");
@@ -52,6 +57,7 @@ $db = get_db();
                 <option value="5">5</option>
             </select><br><br>
             <label for="user">Please choose who you are as i can not not get this to work at this time:</label><br>
+            <!-- get all of the users in the database and use them as options -->
             <select id="user" name="user" default>
                 <?php
                 $statement = $db->prepare("SELECT id, username FROM person");
