@@ -1,20 +1,21 @@
 <?php
 session_start();
 
-// connect to the database
-require("dbConnect.php");
-$db = get_db();
 
-// get the information entered on the previous page
-$username = $_POST["username"];
-$password = $_POST["password"];
+echo "<h1>this page loaded</h1>";
+// // connect to the database
+// require("dbConnect.php");
+// $db = get_db();
 
-// check the database for the user
-$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username' AND password='";
-$check = $db->prepare($queryCheck);
-$check->execute();
+// // get the information entered on the previous page
+// $username = $_POST["username"];
+// $password = $_POST["password"];
 
-echo "this page loaded";
+// // check the database for the user
+// $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username' AND password='";
+// $check = $db->prepare($queryCheck);
+// $check->execute();
+
 
 // // if found redirect to the home page
 // if($check == 1) {
