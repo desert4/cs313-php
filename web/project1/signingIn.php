@@ -13,7 +13,7 @@ $password = $_POST["password"];
 echo "<h1>posting the data</h1>";
 
 // check the database for the user
-$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username' AND password='";
+$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username', password='";
 $check = $db->prepare($queryCheck);
 $check->execute();
 echo "<h1>querying the data</h1>";
