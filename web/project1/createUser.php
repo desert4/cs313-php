@@ -22,10 +22,14 @@ if($check == '1') {
 else {
     try
     {
+        // hash the password
+        $passwordHash = password_hash("$password", PASSWORD_DEFAULT);
+        
+        // store the user
         $query = "INSERT INTO person(username, password, email) VALUES (:username, :password, :email)";
         $statement = $db->prepare($query);
         $statement->bindValue(':username', $username);
-        $statement->bindValue(':password', $password);
+        $statement->bindValue(':password', $passwordHash);
         $statement->bindValue(':email', $email);
         $statement->execute();
     }
