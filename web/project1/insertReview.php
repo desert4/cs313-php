@@ -17,7 +17,7 @@ $personStatement = $db->prepare($personQuery);
 $personStatement->execute();
 
 while ($fRow = $personStatement->fetch(PDO::FETCH_ASSOC)) {
-    $id = $row['id'];
+    $id = $fRow['id'];
 }
 
 echo "$id<br>";
