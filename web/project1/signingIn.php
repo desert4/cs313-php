@@ -33,10 +33,11 @@ if($check == 1) {
 //     // if(password_verify($password, $hashedPassword)) {
         $_SESSION['name'] = $username;
         header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
-    } else {
-        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
+    } 
+    // else {
+    //     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
 
-    }
+    // }
 //     die();
 // }
 // // if not in the database redirect back to sign in page with error
