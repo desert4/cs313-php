@@ -6,6 +6,7 @@ $resort = $_POST["resort"];
 $rating = $_POST["rating"];
 $user = $_SESSION["name"];
 
+echo "$user";
 // connect to the database
 require("dbConnect.php");
 $db = get_db();
@@ -15,7 +16,7 @@ try {
     $query = "INSERT INTO review(place, reviewer, rating) VALUES(:resort, :user, :rating)";
     $statement = $db->prepare($query);
     $statement->bindValue(':resort', $resort);
-    $statement->bindValue('rating', $rating);
+    $statement->bindValue(':rating', $rating);
     $statement->bindValue(':user', $user);
     $statement->execute();
 
