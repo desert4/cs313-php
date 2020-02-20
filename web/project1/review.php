@@ -58,7 +58,7 @@ if (!isset($_SESSION['name'])) {
                 <option value="4.5">4.5</option>
                 <option value="5">5</option>
             </select><br><br>
-            <label for="user">Please choose who you are as i can not not get this to work at this time:</label><br>
+            <!-- <label for="user">Please choose who you are as i can not not get this to work at this time:</label><br> -->
             <!-- get all of the users in the database and use them as options -->
             <!-- <select id="user" name="user" default>
                 <?php
