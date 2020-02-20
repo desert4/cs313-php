@@ -38,14 +38,14 @@ if($check == 1) {
         header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
     } 
     else {
-        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
+        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php?type=invalidpassword");
     }
     die();
 }
 // if not in the database redirect back to sign in page with error
 else {
     echo "<h1>did not find the user</h1>";
-    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidname");
+    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php?type=invalidname");
 }
 
 die();
