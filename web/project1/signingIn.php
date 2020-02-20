@@ -40,8 +40,8 @@ if($check == 1) {
 //     die();
 // }
 // // if not in the database redirect back to sign in page with error
-// else {
-//     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidname");
-// }
+else {
+    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidname");
+}
 
 die();
