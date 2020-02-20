@@ -9,20 +9,36 @@ $db = get_db();
 $username = $_POST["username"];
 $password = $_POST["password"];
 
+// unhash the users password
+
 // check the database for the user
-$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
+$queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username' AND password='";
 $check = $db->prepare($queryCheck);
 $check->execute();
 
 // if found redirect to the home page
 if($check == 1) {
-    $_SESSION['name'] = $username;
-    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");
-}
+    // get the hashed password
+    $passwordQuery = "SELECT * FROM review WHERE place='$username'";
+    $getPass = $db->prepare("$passwordQuery");
+    $getPass->execute();
 
+    while ($sRow = $getPass->fetch(PDO::FETCH_ASSOC)) {
+        $personId = $sRow["id"];
+        $hashedPassword = $sRow["password"];
+    }
+
+    if(password_verify($password, $hashedPassword)) {
+        $_SESSION['name'] = $username;
+        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
+    } else {
+        header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidpassword");
+
+    }
+}
 // if not in the database redirect back to sign in page with error
 else {
-    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalid");
+    header( "Location: https://rocky-reef-99024.herokuapp.com/project1/signIn.php/?type=invalidname");
 }
 
 die();
