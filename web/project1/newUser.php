@@ -33,8 +33,11 @@ $invalid = $_GET['type'];
             if (isset($invalid)) {
                 echo "<p style='color: red'>the username you entered is already taken, please choose a different username</p>";
             }
+            else {
+                echo "<br><br>";
+            }
             ?>
-            <br><br><label>Please enter your password: </label><br>
+            <label>Please enter your password: </label><br>
             <input type="password" name="password" placeholder="password" required><br><br>
             <label>Please enter your email: </label><br>
             <input type="text" name="email" placeholder="example@email.com" required><br><br>
