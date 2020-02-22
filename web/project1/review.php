@@ -58,19 +58,6 @@ if (!isset($_SESSION['name'])) {
                 <option value="4.5">4.5</option>
                 <option value="5">5</option>
             </select><br><br>
-            <!-- <label for="user">Please choose who you are as i can not not get this to work at this time:</label><br> -->
-            <!-- get all of the users in the database and use them as options -->
-            <!-- <select id="user" name="user" default>
-                <?php
-                // $statement = $db->prepare("SELECT id, username FROM person");
-                // $statement->execute();
-                // while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                //     $id = $row['id'];
-                //     $name = $row['username'];
-                //     echo "<option value='$id'>$name</option>";
-                // }
-                ?>
-            </select><br><br> -->
             <button type="submit" id="submit" name="submit" value="submit">Submit</button>
         </form>
     </div>
