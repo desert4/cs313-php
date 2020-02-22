@@ -29,7 +29,11 @@ $invalid = $_GET['type'];
         <form action="createUser.php" method="POST">
             <label>Please enter the username you want: </label><br>
             <input type="text" name="username" placeholder="username" required><br><br>
-            <?php echo "<p style='color: red'>the username you entered is already taken, please choose a different username</p>"; ?>
+            <?php
+            if (isset($invalid)) {
+                echo "<p style='color: red'>the username you entered is already taken, please choose a different username</p>";
+            }
+            ?>
             <label>Please enter your password: </label><br>
             <input type="password" name="password" placeholder="password" required><br><br>
             <label>Please enter your email: </label><br>
