@@ -32,7 +32,7 @@ $check->execute();
     if ($check == 1) {
         echo "<div class='resort'><p>The username that you have entered, $username, has already been taken.  Please click the button to return to the previous page to pick a different username.";
         echo "<form action='./newUser.php' method='POST'>";
-        echo  "<input type='submit' value='Go Back' name='submit'</form></div>";
+        echo  "<input type='submit' value='Go Back' name='submit'></form></div>";
     } else {
         try {
             // hash the password
