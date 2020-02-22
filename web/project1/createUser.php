@@ -29,6 +29,7 @@ $check->execute();
 
 <body>
     <?php
+    // chack to see if the user exsists already
     if ($check == 1) {
         echo "<div class='resort'><p>The username that you have entered, $username, has already been taken.  Please click the button to return to the previous page to pick a different username.";
         echo "<form action='./newUser.php' method='POST'>";
@@ -62,6 +63,3 @@ $check->execute();
 </body>
 
 </html>
-<?php
-// if it doesnt exist, create the user
-?>
