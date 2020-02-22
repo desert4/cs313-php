@@ -36,7 +36,6 @@ $invalid = $_GET['type'];
             else {
                 echo "<br><br>";
             }
-
             $invalid = null;
             ?>
             <label>Please enter your password: </label><br>

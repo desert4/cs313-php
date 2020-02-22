@@ -52,10 +52,12 @@ $check->execute();
 
         // set the session username
         $_SESSION['name'] = $username;
-    }
 
-    header('Refresh: 2; URL=https://rocky-reef-99024.herokuapp.com/project1/ski.php');
-    die();
+        // redirect to the home page
+        header('Refresh: 2; URL=https://rocky-reef-99024.herokuapp.com/project1/ski.php');
+        die();
+        }
+
     ?>
 </body>
 
