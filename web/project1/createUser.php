@@ -15,7 +15,7 @@ $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
 $check = $db->prepare($queryCheck);
 $check->execute();
 
-if($check == '1') {
+if($check == 1) {
     header( "Location: https://rocky-reef-99024.herokuapp.com/project1/newUser.php?type=invalid");
 }
 // if it doesnt exist, create the user
