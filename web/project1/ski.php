@@ -26,7 +26,7 @@ $reviewTotal = 0;
 <body>
     <!-- import the navigation bar -->
     <?php include 'skiNavBar.php' ?>
-    <h1>Ski Every Day</h1>
+    <h1 class="resort">Ski Every Day</h1>
 
     <?php
     // check the search box
