@@ -28,7 +28,6 @@ $check->execute();
 
 // if found redirect to the home page
 if($check == 1) {
-    echo "<h1>found the user</h1>";
     // get the hashed password
     $passwordQuery = "SELECT * FROM person WHERE username='$username'";
     $getPass = $db->prepare("$passwordQuery");
@@ -45,7 +44,7 @@ if($check == 1) {
         header( "Location: https://rocky-reef-99024.herokuapp.com/project1/ski.php");    
     } 
     else {
-        echo "<div class='resort'><p>The password that you have entered is incorrect. Please try again";
+        echo "<div class='resort'><p>We found you, but the password that you have entered is incorrect. Please try again";
         echo "<form action='./signIn.php' method='POST'>";
         echo  "<input type='submit' value='Try Again' name='submit'></form></div>";
     }
