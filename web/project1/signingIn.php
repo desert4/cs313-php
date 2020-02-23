@@ -1,23 +1,30 @@
 <?php
 session_start();
 
-
 // connect to the database
 require("dbConnect.php");
 $db = get_db();
-echo "<h1>connected to the databse</h1>";
 
 // get the information entered on the previous page
 $username = $_POST["username"];
 $password = $_POST["password"];
-echo "<h1>posting the data</h1>";
+?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Check</title>
+    <link rel="icon" href="./Images/skier.png">
+    <link href="navigation.css" rel="stylesheet" type="text/css">
+    <link href="homepage.css" rel="stylesheet" type="text/css">
+    <link href="resort.css" rel="stylesheet" type="text/css">
+</head>
+
+<?php
 
 // check the database for the user
 $queryCheck = "SELECT COUNT(*) FROM person WHERE username='$username'";
 $check = $db->prepare($queryCheck);
 $check->execute();
-echo "<h1>querying the data</h1>";
-
 
 // if found redirect to the home page
 if($check == 1) {
