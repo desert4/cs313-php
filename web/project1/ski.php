@@ -33,7 +33,7 @@ $reviewTotal = 0;
     if (!$_GET['search']) {
         $query = "SELECT * FROM resort";
     } else {
-        $searchValue = $_POST['search'];
+        $searchValue = $_GET['search'];
         $query = "SELECT * FROM resort WHERE name='$searchValue'";
     }
 
