@@ -1,8 +1,9 @@
+-- create the database --
+DROP TABLE IF EXISTS customer_order;
 DROP TABLE IF EXISTS admin;
 DROP TABLE IF EXISTS customer;
-DROP TABLE IF EXISTS order;
+DROP TABLE IF EXISTS purchase;
 DROP TABLE IF EXISTS job;
-DROP TABLE IF EXISTS customer_order;
 
 CREATE TABLE admin
 ( id            SERIAL          NOT NULL PRIMARY KEY
@@ -19,9 +20,9 @@ CREATE TABLE customer
 , phone         VARCHAR(150)    NOT NULL
 );
 
-CREATE TABLE order
+CREATE TABLE purchase
 ( id            SERIAL          NOT NULL PRIMARY KEY
-, order         INT
+, number_order  INT
 , estimate      FLOAT
 );
 
@@ -29,11 +30,15 @@ CREATE TABLE job
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , name          VARCHAR(200)    NOT NULL
 , cost          INT             NOT NULL
+, time_estimate INT             NOT NULL
 );
 
 CREATE TABLE customer_order
 ( id            SERIAL          NOT NULL PRIMARY KEY
 , customer_id   INT             NOT NULL REFERENCES customer(id)
-, order_id      INT             NOT NULL REFERENCES order(id)
+, order_id      INT             NOT NULL REFERENCES purchase(id)
 , job_id        INT             NOT NULL REFERENCES job(id)
 );
+
+-- populate the intial database --
+INSERT INTO job(name, cost, time_estimate) VALUES("Queen Bed", 700, 15);
