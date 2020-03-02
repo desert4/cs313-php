@@ -48,14 +48,14 @@ CREATE TABLE customer_order
 -- populate the intial database --
 
 -- populate jobs --
-INSERT INTO job(name, cost, time_estimate) VALUES("Single Bed", 350, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Twin Bed", 400, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Bunk Bed", 800, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Queen Bed", 500, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("King Bed", 600, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Outdoor Railing", 24, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Indoor Railing", 28, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Outdoor Stair Railing", 34, 5);
-INSERT INTO job(name, cost, time_estimate) VALUES("Indoor Stair Railing", 34, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Single Bed', 350, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Twin Bed', 400, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Bunk Bed', 800, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Queen Bed', 500, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('King Bed', 600, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Outdoor Railing', 24, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Indoor Railing', 28, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Outdoor Stair Railing', 34, 5);
+INSERT INTO job(name, cost, time_estimate) VALUES('Indoor Stair Railing', 34, 5);
 
 -- populate admin --
